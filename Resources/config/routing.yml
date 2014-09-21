@@ -1,0 +1,3 @@
+harald_ez_debug_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: HaraldEzDebugBundle:Default:index }

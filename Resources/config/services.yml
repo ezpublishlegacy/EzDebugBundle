@@ -1,0 +1,10 @@
+parameters:
+
+services:
+    harald.ezdatacollector:
+        class: Harald\EzDebugBundle\Collector\EzDataCollector
+        arguments:
+            - @service_container
+            - @doctrine.orm.entity_manager
+        tags:
+            - { name: data_collector, template: "HaraldEzDebugBundle:Collector:ezdebug", id: "ezdata" }
