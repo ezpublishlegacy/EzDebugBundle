@@ -1,0 +1,20 @@
+{
+    "name": "htollefsen/ezdebugbundle",
+    "description": "Example usage of exteding the symfony toolbar",
+    "license": "",
+    "authors": [
+        {
+            "name": "Harald Tollefsen",
+            "homepage": "https://github.com/htollefsen/ezdebugbundle/graphs/contributors"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "ezsystems/ezpublish-kernel": "*"
+    },
+    "autoload": {
+        "psr-0": {"htollefsen\\EzDebugBundle": ""}
+    },
+    "target-dir": "htollefsen/EzDebugBundle"
+}        
