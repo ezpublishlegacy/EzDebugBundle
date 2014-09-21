@@ -1,4 +1,4 @@
-EzDebugBundle
+HTollefsenEzDebugBundle
 =============
 
 ## Installation
@@ -6,10 +6,10 @@ EzDebugBundle
 1. Update EzPublishKernel.php
   <pre>
     ...
-    use Harald\EzDebugBundle\HaraldEzDebugBundle;
+    use HTollefsen\EzDebugBundle\HTollefsenEzDebugBundle;
     ...
     case "dev":
-      $bundles[] = new HaraldEzDebugBundle();
+      $bundles[] = new HTollefsenEzDebugBundle();
     ...
   </pre>
 2. Update composer.json

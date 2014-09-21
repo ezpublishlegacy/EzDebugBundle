@@ -14,6 +14,6 @@
         "ezsystems/ezpublish-kernel": "*"
     },
     "autoload": {
-        "psr-0": {"htollefsen\\EzDebugBundle": ""}
+        "psr-0": {"htollefsen\\HTollefsenEzDebugBundle": ""}
     }
 }        
