@@ -1,6 +1,6 @@
 <?php
 
-namespace Harald\EzDebugBundle\Collector;
+namespace HTollefsen\EzDebugBundle\Collector;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -10,7 +10,7 @@ use Doctrine\ORM\EntityManager;
 
 /**
  * Class EzDataCollector
- * @package Harald\EzDebugBundle\Collector
+ * @package HTollefsen\EzDebugBundle\Collector
  */
 class EzDataCollector extends DataCollector
 {

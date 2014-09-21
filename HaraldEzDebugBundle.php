@@ -1,9 +1,9 @@
 <?php
 
-namespace Harald\EzDebugBundle;
+namespace HTollefsen\EzDebugBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class HaraldEzDebugBundle extends Bundle
+class HTollefsenEzDebugBundle extends Bundle
 {
 }
