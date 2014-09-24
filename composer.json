@@ -1,6 +1,6 @@
 {
     "name": "htollefsen/ezdebugbundle",
-    "description": "Example usage of exteding the symfony toolbar",
+    "description": "Example usage of extending the symfony toolbar",
     "license": "",
     "authors": [
         {
@@ -11,9 +11,10 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "ezsystems/ezpublish-kernel": "*"
+        "ezsystems/ezpublish-kernel": "*",
+        "doctrine/doctrine-bundle": "~1.3@beta"
     },
     "autoload": {
-        "psr-0": {"htollefsen\\HTollefsenEzDebugBundle": ""}
+        "psr-0": { "HTollefsen\\EzDebugBundle": "." }
     }
 }        
