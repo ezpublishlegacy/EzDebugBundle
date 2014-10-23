@@ -1,5 +1,5 @@
 {
-    "name": "htollefsen/ezdebugbundle",
+    "name": "htollefsen/ezdebug-bundle",
     "description": "Example usage of extending the symfony toolbar",
     "license": "",
     "authors": [
@@ -15,7 +15,7 @@
         "doctrine/doctrine-bundle": "~1.3@beta"
     },
     "autoload": {
-        "psr-0": { "HTollefsen\\Bundle\\EzDebugBundle": "" }
+        "psr-0": { "HTollefsen\\EzDebugBundle": "" }
     },
-    "target-dir": "HTollefsen/Bundle/EzDebugBundle"
+    "target-dir": "HTollefsen/EzDebugBundle"
 }
