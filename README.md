@@ -1,6 +1,6 @@
 HTollefsenEzDebugBundle
 =============
-
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/caeff112-1c15-4eb5-9bce-380e59f25ed7/big.png)](https://insight.sensiolabs.com/projects/caeff112-1c15-4eb5-9bce-380e59f25ed7)
 ## Installation
 
 1. Update EzPublishKernel.php
