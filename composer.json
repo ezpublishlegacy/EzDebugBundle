@@ -1,7 +1,7 @@
 {
     "name": "htollefsen/ezdebugbundle",
     "description": "Example usage of extending the symfony toolbar",
-    "license": "",
+    "license": "MIT",
     "authors": [
         {
             "name": "Harald Tollefsen",
