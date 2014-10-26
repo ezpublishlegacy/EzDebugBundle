@@ -3,6 +3,7 @@ parameters:
 services:
     htollefsen.ezdatacollector:
         class: HTollefsen\EzDebugBundle\Collector\EzDataCollector
+        public: false
         arguments:
             - @service_container
             - @doctrine.orm.entity_manager
