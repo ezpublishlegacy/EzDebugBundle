@@ -15,15 +15,18 @@ use Doctrine\ORM\EntityManager;
 class EzDataCollector extends DataCollector
 {
     private $container;
+
+    /**
+     * @em EntityManager
+     */
     private $em;
 
     /**
      * @param Container $container
-     * @param EntityManager $em
      */
-    public function __construct(Container $container, EntityManager $em) {
+    public function __construct(Container $container) {
         $this->container = $container;
-        $this->em = $em;
+        $this->em = $this->get('doctrine.orm.entity_manager');
     }
 
     /**

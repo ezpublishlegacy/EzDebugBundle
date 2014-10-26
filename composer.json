@@ -17,7 +17,12 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
-        "doctrine/doctrine-bundle": "~1.3@beta"
+        "doctrine/doctrine-bundle": "~1.3@beta",
+        "doctrine/orm": "dev-master",
+        "symfony/http-foundation": "dev-master",
+        "symfony/http-kernel": "dev-master",
+        "symfony/dependency-injection": "dev-master",
+        "symfony/config": "dev-master"
     },
     "autoload": {
         "psr-0": { "HTollefsen\\EzDebugBundle": "" }
