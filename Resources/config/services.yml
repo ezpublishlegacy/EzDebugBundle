@@ -3,7 +3,5 @@ parameters:
 services:
     htollefsen.ezdatacollector:
         class: HTollefsen\EzDebugBundle\Collector\EzDataCollector
-        arguments:
-            - @service_container
         tags:
             - { name: data_collector, template: "HTollefsenEzDebugBundle:Collector:ezdebug", id: "ezdata" }

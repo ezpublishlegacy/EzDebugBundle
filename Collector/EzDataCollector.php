@@ -5,8 +5,6 @@ namespace HTollefsen\EzDebugBundle\Collector;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;
-use Symfony\Component\DependencyInjection\ContainerInterface as Container;
-use Doctrine\ORM\EntityManager;
 
 /**
  * Class EzDataCollector
@@ -14,21 +12,6 @@ use Doctrine\ORM\EntityManager;
  */
 class EzDataCollector extends DataCollector
 {
-    private $container;
-
-    /**
-     * @em EntityManager
-     */
-    private $em;
-
-    /**
-     * @param Container $container
-     */
-    public function __construct(Container $container) {
-        $this->container = $container;
-        $this->em = $this->get('doctrine.orm.entity_manager');
-    }
-
     /**
      * @param Request $request
      * @param Response $response
@@ -46,7 +29,7 @@ class EzDataCollector extends DataCollector
      * @return mixed
      */
     protected function getBundles() {
-        return $this->container->getParameter('kernel.bundles');
+        return $this->get('service_container')->getParameter('kernel.bundles');
     }
 
     /**
@@ -63,7 +46,7 @@ class EzDataCollector extends DataCollector
      * @return array
      */
     protected function rawQuery($sql) {
-        $query = $this->em->getConnection()->prepare($sql);
+        $query = $this->get('doctrine.orm.entity_manager')->getConnection()->prepare($sql);
         $query->execute();
         return $query->fetchAll();
     }
