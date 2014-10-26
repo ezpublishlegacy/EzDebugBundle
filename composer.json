@@ -8,7 +8,13 @@
             "homepage": "https://github.com/htollefsen/ezdebugbundle/graphs/contributors"
         }
     ],
-    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:htollefsen/EzDebugBundle.git"
+        }
+    ],
+    "minimum-stability": "@dev",
     "require": {
         "php": ">=5.3.3",
         "doctrine/doctrine-bundle": "~1.3@beta"
